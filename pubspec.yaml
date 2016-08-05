@@ -1,0 +1,21 @@
+
+name: invasive_aquatic_plants_viewer
+description: View which plants are considered as invasive on a Google map
+version: 0.0.1
+environment:
+  sdk: '>=1.13.0 <2.0.0'
+dependencies:
+  angular2: 2.0.0-beta.17
+  bootstrap: ^3.3.6
+  browser: ^0.10.0
+  dart_to_js_script_rewriter: ^1.0.1
+  google_maps: '>=3.0.0 <4.0.0'
+  csv_sheet:
+transformers:
+- angular2:
+    platform_directives:
+    - 'package:angular2/common.dart#COMMON_DIRECTIVES'
+    platform_pipes:
+    - 'package:angular2/common.dart#COMMON_PIPES'
+    entry_points: web/main.dart
+- dart_to_js_script_rewriter
